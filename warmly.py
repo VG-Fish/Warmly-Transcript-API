@@ -40,6 +40,3 @@ def parse() -> Response:
         .replace("```", "")
     output_dict: Dict = literal_eval(output)
     return jsonify(output_dict)
-
-if __name__ == "__main__":
-    app.run()

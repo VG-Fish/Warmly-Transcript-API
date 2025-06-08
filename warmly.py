@@ -2,6 +2,7 @@ from typing import Dict, Literal
 import requests
 from ast import literal_eval
 from flask import Flask, Response, request, jsonify
+from flask_cors import CORS
 
 GEMINI_WEBSITE: str = "https://gemini-wrapper-nine.vercel.app/gemini"
 PROMPT: str = \
@@ -19,6 +20,7 @@ valid transcript, output an empty JSON object. Here is the transcript:
 
 app: Flask = Flask(__name__)
 app.debug = False
+CORS(app)
 
 @app.route("/")
 def hello() -> Literal["Hello."]:

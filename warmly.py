@@ -14,7 +14,7 @@ organizations, or mutual experiences between participants. Things to Follow Up O
 that require further attention. Action Items & Owners – For any discussed tasks, specify what needs to be done and who (if anyone)
 committed to it. Dates or Deadlines Mentioned – Extract any time-related references. Please structure your output in a JSON format
 using different keys for each of the categories mentioned above and keep the writing concise but informative. If you do not have a
-valid transcript, output an empty JSON object. Here is the transcript:
+valid transcript, output an empty JSON object. Ensure each value for each key is NOT another object. Here is the transcript:
 {transcript}
 """
 
